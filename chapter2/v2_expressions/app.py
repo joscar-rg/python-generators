@@ -4,4 +4,6 @@
 #        my_list.append(n ** 2)
 #    return my_list
 
-my_list = [num ** 2 for num in range(1,10)]
+my_list = (num ** 2 for num in range(1,10))
+
+print(my_list)
