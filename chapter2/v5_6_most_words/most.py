@@ -8,3 +8,7 @@ words = [
     "facing smile vowel chose other",
     "occur shop box metal equal mouse some city"
 ]
+
+most = max((len(string.split(" ")), string) for string in words)
+
+print(most)
