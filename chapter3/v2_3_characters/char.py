@@ -20,3 +20,9 @@ data = [
     "peace mass forty colony dress it shelter sides printed shout pupil energy law nature also person lake chance drawn noon though crop meant although",
     "dull recent road tone ask exercise almost rice tried log environment part circle enemy seen business parts own stretch problem classroom win done glass",
 ]
+
+no_spaces = (string.replace(" ", "") for string in data)
+string_length = (len(string) for string in no_spaces)
+shortest_strs = (length for length in string_length if length <= 130)
+
+print(list(shortest_strs))
